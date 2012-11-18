@@ -1,0 +1,15 @@
+[submodule "Vagrant/cookbooks/apache2"]
+	path = Vagrant/cookbooks/apache2
+	url = https://github.com/opscode-cookbooks/apache2.git
+[submodule "Vagrant/cookbooks/mysql"]
+	path = Vagrant/cookbooks/mysql
+	url = https://github.com/opscode-cookbooks/mysql
+[submodule "Vagrant/cookbooks/php"]
+	path = Vagrant/cookbooks/php
+	url = https://github.com/opscode-cookbooks/php
+[submodule "Vagrant/cookbooks/apt"]
+	path = Vagrant/cookbooks/apt
+	url = https://github.com/fnichol/chef-apt.git
+[submodule "Vagrant/cookbooks/openssl"]
+	path = Vagrant/cookbooks/openssl
+	url = https://github.com/opscode-cookbooks/openssl.git
