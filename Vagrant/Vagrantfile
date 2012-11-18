@@ -37,7 +37,7 @@ Vagrant::Config.run do |config|
   # config.vm.share_folder "v-data", "/vagrant_data", "../data"
   
   
-  config.vm.share_folder "wwwroot", "/var/www", "../", :owner => "www-data", :group => "www-data", :create => true
+  config.vm.share_folder "wwwroot", "/var/www", "../symfony2/", :owner => "www-data", :group => "www-data", :create => true
   # config.vm.share_folder "mysql", "/var/lib/mysql", "../mysql", :owner => "mysql", :group => "mysql", :create => true
   
 
@@ -80,7 +80,10 @@ Vagrant::Config.run do |config|
   #   chef.add_role "web"
   #
   #   # You may also specify custom JSON attributes:
-     chef.json = { :mysql => { :server_root_password => "root", :server_repl_password => "repl", :server_debian_password => "debian"  } }
+     chef.json = {
+        :mysql => { :server_root_password => "root", :server_repl_password => "repl", :server_debian_password => "debian"  },
+        :apache => { :wwwroot => "/var/www/web" }
+      }
   end
 
   # Enable provisioning with chef server, specifying the chef server URL,
